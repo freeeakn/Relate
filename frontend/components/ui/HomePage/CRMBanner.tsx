@@ -1,17 +1,18 @@
 import * as motion from "framer-motion/client";
 import Image from "next/image";
 // import CrmLogo from "@/assets/CRM_logo.svg";
+import Desk from '@/assets/metallic_desk.png'
 import Crm from "@/assets/CRM.svg";
 import Star from "@/assets/star.svg";
 
 const CRMBanner = () => (
-  <div className="flex items-center justify-center gap-12">
+  <div className="w-full flex items-center justify-center gap-12">
     <motion.div
       initial={{ opacity: 0, x: -100 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ type: "spring", stiffness: 10 }}
     >
-      <Image src={Crm} height={500} width={550} alt="CrmLogo" />
+      <Image src={Crm} height={500} width={800} alt="CrmLogo" />
     </motion.div>
     <motion.div
       initial={{ opacity: 0, x: 100 }}
@@ -26,12 +27,12 @@ const CRMBanner = () => (
         Automation!
       </h3>
       <motion.span
-        initial={{ opacity: 0, x: 100, rotate: 180 }}
-        whileInView={{ opacity: 1, x: 0, rotate: 90 }}
-        transition={{ type: "spring", stiffness: 5 }}
-        className="absolute -bottom-4 right-10"
+        initial={{ opacity: 0, x: 100, rotate: 90 }}
+        whileInView={{ opacity: 1, x: 0, rotate: 25 }}
+        transition={{ type: "spring", stiffness: 10 }}
+        className="absolute -bottom-10 -right-8"
       >
-        <Image src={Star} height={55} width={55} alt="star" />
+        <Image src={Desk} height={120} width={120} alt="desk" />
       </motion.span>
     </motion.div>
   </div>
