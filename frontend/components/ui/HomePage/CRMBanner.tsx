@@ -2,7 +2,7 @@ import * as motion from "framer-motion/client";
 import Image from "next/image";
 // import CrmLogo from "@/assets/CRM_logo.svg";
 import Desk from "@/assets/metallic_desk.png";
-import Crm from "@/assets/CRM.svg";
+import Crm from "@/assets/CRM.png";
 import Star from "@/assets/star.svg";
 
 const CRMBanner = () => (
